@@ -17,10 +17,10 @@
 #' @note Can pass a vector. \cr
 #'
 #'  See also
-#'  https://icd.who.int/browse10/2019/en
-#'  https://www.icd10data.com/ICD10CM/Codes
+#'  [WHO - ICD-10 Version:2019](https://icd.who.int/browse10/2019/en)
+#'  [ICD10data.com](https://www.icd10data.com/ICD10CM/Codes)
 #'
-#'  @example
+#'  @examples
 #'
 #'  df <- data.frame(ID = c( 1,2,3,4,5), my.var = c('A3.0', 'R85.1', 'F64', 'U10.2', 'O9A'))
 #'
