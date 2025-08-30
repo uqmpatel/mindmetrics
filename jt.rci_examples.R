@@ -58,6 +58,7 @@ round( my_jt.rci_object[[1]] , 2)          # rounding decimals
 
 my_jt.rci_object[[2]] + ggplot2::theme_minimal()
 my_jt.rci_object[[2]] + ggplot2::theme(legend.position = "top")
+my_jt.rci_object[[2]] + ggplot2::labs(caption = "")
 
 # the tabled results can be inspected as a dataframe:
 
@@ -109,7 +110,7 @@ jt.rci(
 
 )
 
-# Alternatively, using Categories = 5 (or other arguments that depend on the recovery threshold) will ignore recovery_thrshld argument and include the threshold as mandatory
+# Alternatively, using Categories = 'cat.5' (or other arguments that depend on the recovery threshold) will ignore recovery_thrshld argument and include the threshold as mandatory
 
 jt.rci(
 
@@ -178,7 +179,7 @@ jt.rci(
 
 
 
-## Supplied sd: ----
+## Externally supplied standard deviation: ----
 
 jt.rci(
 
@@ -216,7 +217,7 @@ jt.rci(
 # Specify these using the min_to_use and max_to_use arguments
 # For an example suppose the true maximums and minimums of a psychometric scale are defined by minima and maxima:
 
-minima = plyr::round_any( min(c( rci.data[ , 2], rci.data[ , 3] ), na.rm = TRUE) - 5 , 1,  floor) # add padding (10) to the lower limit
+minima = plyr::round_any( min(c( rci.data[ , 2], rci.data[ , 3] ), na.rm = TRUE) - 5 , 1,  floor) # add padding (5) to the lower limit
 maxima = plyr::round_any( max(c( rci.data[ , 2], rci.data[ , 3] ), na.rm = TRUE) + 5 , 1,  ceiling) # add padding (5) to the upper limit
 
 
@@ -291,7 +292,7 @@ jt.rci(
 
   title = 'My title',
   subtitle = 'Pre-post scores of Kessler-10 among adults',
-  caption = '',
+  caption = paste0('Sample size = ', dim(rci.data)[1]),
   xlabel = 'Pre K-10',
   ylabel = 'Post K-10'
 

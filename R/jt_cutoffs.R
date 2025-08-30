@@ -12,7 +12,7 @@
 #' @param m0 Mean instrument score among a well functioning or normal population.
 #' @param s0 Standard deviation of instrument score among a well functioning or normal population.
 #' @param m1 Mean of pretest experimental or pretest control groups. If `vec` is supplied, `m1` will be calculated automatically.
-#' @param s1 Mean of pretest experimental or pretest control groups. If `vec` is supplied, `s1` will be calculated automatically.
+#' @param s1 Standard deviation of pretest experimental or pretest control groups. If `vec` is supplied, `s1` will be calculated automatically.
 #' @param equal.variance If `TRUE`, only `m0` & `m1` (or `vec`) are required. If `FALSE`, function requires: `m0`, `s0`, `m1` & `s1`. Defaults to `TRUE`.
 #'
 #'
@@ -27,7 +27,7 @@
 #' See [Jacobson & Truax's 1991]((https://pubmed.ncbi.nlm.nih.gov/2002127/)) paper outlining the Reliable Change Index (RCI).
 #'
 #'
-#' #' @example rci_helpers_examples.R
+#' @example rci_helpers_examples.R
 #'
 #'
 #'
