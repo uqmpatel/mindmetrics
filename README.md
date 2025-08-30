@@ -1,7 +1,7 @@
 # mindmetrics
 
 
-This package is written for r, to help process and understand large public data sets, particularly related to psychology and mental health.
+This package is written for r, to help process and understand large public health data sets, particularly related to psychology and mental health.
 
 ***
 
